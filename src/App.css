@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;700&family=Montserrat:wght@200;300&display=swap');
+
+#logo, #promptHeader, #message, .toast{
+  font-family: "Geologica", sans-serif;
+}
+
+.toast {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  font-weight: bold
+}
