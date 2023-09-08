@@ -14,7 +14,7 @@ export const makeFormSubmission = async (payload: unknown) => {
 }
 
 export const fetchUserFiles = async () => {
-  return await createApiClient().get(`/user/files`);
+  return await createApiClient(true, false).get(`/api/v1/hub/fetch`);
 }
 
 export const uploadFile = async (payload: unknown) => {

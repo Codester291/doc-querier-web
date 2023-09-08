@@ -14,10 +14,11 @@ function Dashboard() {
   const [Prompt, setPrompt] = useState('');
   const [Enabled, isEnabled] = useState(false);
 
-  const token = localStorage.getItem('token')
+  const token = 'c87af9b0-0d74-4ae0-939a-1f78cd96249d'
 
   const fetchUserFileData = async () => {
     const result = await fetchUserFiles()
+    console.log(result)
     const { code, message, data } = result.data
     if (code === '00') {
       setData(data)

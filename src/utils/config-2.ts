@@ -1,7 +1,7 @@
 import { AxiosRequestConfig } from 'axios'
 import axios from 'axios'
 
-export const baseUrl = 'http://ec2-18-232-182-173.compute-1.amazonaws.com:5300'
+export const baseUrl = 'https://2e80-102-89-42-144.ngrok.io'
 
 const createApiClient = (auth = true, formData = true) => {
   const config: AxiosRequestConfig = {
@@ -9,7 +9,7 @@ const createApiClient = (auth = true, formData = true) => {
   }
 
   if (auth) {
-    const token =  localStorage.getItem('token');
+    const token =  'c87af9b0-0d74-4ae0-939a-1f78cd96249d';
 
     if(formData) {
       config.headers = {
